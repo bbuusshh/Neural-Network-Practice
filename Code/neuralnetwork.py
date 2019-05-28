@@ -28,6 +28,9 @@ class NeuralNetwork:
             a = self.activation(np.matmul(w, a) + b)
         return a
 
+    def loss_function(self, labels):
+        pass
+
     @staticmethod
     def activation(x):
         return 1 / (1 + np.exp(-x))
