@@ -19,7 +19,7 @@ def import_data(path):
     '''
 
     data = np.loadtxt(path)
-    input_data = data[:, :2]
+    input_data = data[:,:2]
     output_data = data[:, -1]
 
     return input_data, output_data
