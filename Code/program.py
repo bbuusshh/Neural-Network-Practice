@@ -19,7 +19,7 @@ def import_data(path):
     '''
 
     data = np.loadtxt(path)
-    input_data = data[:,:2]
+    input_data = data[:, :2]
     output_data = data[:, -1]
 
     return input_data, output_data
@@ -54,7 +54,7 @@ def get_predictions(data_in, network):
 
 if __name__ == '__main__':
 
-    filename = 'data2Class.txt'
+    filename = '/home/vandvag/Documents/Python/Neural-Network-Practice/Code/data2Class.txt'
 
     data_in, data_out = import_data(filename)
 
