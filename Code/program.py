@@ -63,4 +63,3 @@ if __name__ == '__main__':
     net = nn.NeuralNetwork(layer_sizes)
     # Get predictions from forward propagation
     predictions = get_predictions(data_in, net)
-    print(predictions)
