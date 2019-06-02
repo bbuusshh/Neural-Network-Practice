@@ -54,7 +54,7 @@ def get_predictions(data_in, network):
 
 if __name__ == '__main__':
 
-    filename = 'data2Class.txt'
+    filename = '/home/vandvag/Documents/python/Neural-Network-Practice/Code/data2Class.txt'
 
     data_in, data_out = import_data(filename)
 

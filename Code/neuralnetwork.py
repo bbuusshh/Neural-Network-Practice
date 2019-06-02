@@ -22,12 +22,15 @@ class NeuralNetwork:
 
     def forward(self, a):
         '''
-        Calculates the forward progpa
+        Calculates the forward progpation
         '''
         for w, b in zip(self.weights, self.biases):
             a = self.activation(np.matmul(w, a) + b)
         return a
 
+    def loss_function(self, labels):
+        pass
+
     @staticmethod
     def activation(x):
-        return 1/(1+np.exp(-x))
+        return 1 / (1 + np.exp(-x))
